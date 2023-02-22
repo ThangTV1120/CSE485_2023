@@ -5,16 +5,17 @@
     <?php
     // Bước 01: Kết nối tới DB Server
     $conn = mysqli_connect('localhost', 'root', '', 'btth01_cse485');
+    $id=$_GET['id'];
     if (!$conn) {
         die('Kết nối tới Server lỗi');
     }
     // Bước 02: Thực hiện truy vấn
-    $sql = "SELECT * FROM baiviet ORDER BY ma_bviet ";
+    $sql = "SELECT * FROM baiviet WHERE ma_bviet=$id ";
     $result = mysqli_query($conn, $sql);
-
+    $row = mysqli_fetch_assoc($result)
     // Bước 03: Xử lý kết quả trả về
-    if (mysqli_num_rows($result) > 0) {
-        while ($row = mysqli_fetch_assoc($result)) {
+    // if (mysqli_num_rows($result) > 0) {
+    //     while ($row = mysqli_fetch_assoc($result)) {
     ?>
             <div class="row mb-5">
                 <div class="col-sm-4">
@@ -33,8 +34,8 @@
                 </div>
             </div>
     <?php
-        }
-    }
+    //     }
+    // }
     ?>
 
 </main>

@@ -38,17 +38,18 @@
                 }
                 // Truy van
                 $sql = "SELECT * FROM baiviet ORDER BY ma_bviet";
-                $result = mysqli_query($conn, $sql);
+                $result = mysqli_query($conn, $sql); 
                 // Xu li ket qua tra ve
                 if(mysqli_num_rows($result) > 0){
                     while($row = mysqli_fetch_assoc($result)){
+                       
             ?>
                 <div class="col-sm-3">
                     <div class="card mb-2" style="width: 100%;">
                         <img src="<?php echo $row['hinhanh'];?>" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title text-center">
-                            <a href="detail.php" class="text-decoration-none fw-bold">
+                            <a href="detail.php?id=<?= $row['ma_bviet']?>" class="text-decoration-none fw-bold">
                                 <?php echo $row['ten_bhat'];?>
                             </a>
                         </h5>
