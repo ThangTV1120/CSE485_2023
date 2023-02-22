@@ -8,7 +8,7 @@ if(isset($_POST['btt_update'])){
     $catId=$_POST['txtCatId'];
     $catName=$_POST['txtCatName'];
     
-    $sql = "UPDATE tacgia SET ten_tgia='$catName' WHERE ma_ttgia=$catId ";
+    $sql = "UPDATE tacgia SET ten_tgia='$catName' WHERE ma_tgia=$catId ";
     $result = mysqli_query($conn, $sql);// thuc thi truy van
     if($result){
         header("Location:author.php");
@@ -16,7 +16,7 @@ if(isset($_POST['btt_update'])){
 }
 if(isset($_POST['btt_add'])){
      $catName=$_POST["txtCatName"];
-     $cout="SELECT count(tacgia.ma_ttgia) FROM tacgia";
+     $cout="SELECT count(tacgia.ma_tgia) FROM tacgia";
     $result = mysqli_query($conn, $cout);
     $r=mysqli_fetch_assoc($result);
     $rr=$r['count(tacgia.ma_tgia)']+1;
