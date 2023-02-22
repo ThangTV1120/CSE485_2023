@@ -28,7 +28,7 @@
     </header>
     
     <main class="container-fluid mt-3">
-        <h3 class="text-center text-uppercase mb-3 text-primary">TOP bài hát yêu thích</h3>
+        <h3 class="text-center text-uppercase mb-3 text-primary fw-bold">TOP bài hát yêu thích</h3>
         <div class="row">
             <?php
                 // Ket noi db
@@ -48,7 +48,7 @@
                         <img src="<?php echo $row['hinhanh'];?>" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title text-center">
-                            <a href="" class="text-decoration-none">
+                            <a href="detail.php" class="text-decoration-none fw-bold">
                                 <?php echo $row['ten_bhat'];?>
                             </a>
                         </h5>
