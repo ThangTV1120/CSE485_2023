@@ -1,7 +1,7 @@
 <?php include 'header_admin.php';?>
 <div class="row">
             <div class="col-sm">
-                <a href="add_category.php" class="btn btn-success">Thêm mới</a>
+                <a href="add_author.php" class="btn btn-success">Thêm mới</a>
                 <table class="table">
                     <thead>
                         <tr>
@@ -29,7 +29,7 @@
                                 <th scope="row"><?=$row['ma_tgia'] ?></th>
                                 <td><?=$row['ten_tgia'] ?></td>
                                 <td>
-                                    <a href="edit_category.php?id=<?=$row['ma_tgia'] ?>"><i class="fa-solid fa-pen-to-square"></i></a>
+                                    <a href="edit_author.php?id=<?=$row['ma_tgia'] ?>"><i class="fa-solid fa-pen-to-square"></i></a>
                                 </td>
                                 <td>
                                     <a href=""><i class="fa-solid fa-trash"></i></a>
