@@ -67,6 +67,19 @@
     <main class="container-fluid mt-3">
         <h3 class="text-center text-uppercase mb-3 text-primary">TOP bài hát yêu thích</h3>
         <div class="row">
+            <?php
+                // Ket noi db
+                $conn = mysqli_connect('localhost','root','','btth01_cse485');
+                if(!$conn){
+                    die('Kết nối tới Server lỗi');
+                }
+                // Truy van
+
+                // Xu li ket qua tra ve
+
+            ?>
+
+
             <div class="col-sm-3">
                 <div class="card mb-2" style="width: 100%;">
                     <img src="images/songs/cayvagio.jpg" class="card-img-top" alt="...">
