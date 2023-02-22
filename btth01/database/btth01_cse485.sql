@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 22, 2023 at 07:51 AM
+-- Generation Time: Feb 22, 2023 at 05:29 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `btth01_cse485_ex`
+-- Database: `btth01_cse485`
 --
 
 -- --------------------------------------------------------
@@ -110,6 +110,27 @@ INSERT INTO `theloai` (`ma_tloai`, `ten_tloai`) VALUES
 (8, 'R&B'),
 (9, 'Rap');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `username` text CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+  `password` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`username`, `password`) VALUES
+('hung123', 'hung12345'),
+('manhtuan123', 'Manhtuannn'),
+('thangnv', 'thangnv123'),
+('tuanhau2k2', 'Tuanhau2k2@');
+
 --
 -- Indexes for dumped tables
 --
@@ -133,6 +154,12 @@ ALTER TABLE `tacgia`
 --
 ALTER TABLE `theloai`
   ADD PRIMARY KEY (`ma_tloai`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`username`(100));
 
 --
 -- Constraints for dumped tables
