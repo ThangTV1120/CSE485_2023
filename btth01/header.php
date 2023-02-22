@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
-<body>
+<body class="bg-dark">
 <header>
-        <nav class="navbar navbar-expand-lg bg-info bg-body-tertiary shadow p-3 rounded">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-info bg-dark shadow p-3 rounded" style="margin-top: 5%;">
+            <div class="container-fluid fixed-top bg-dark"
+                style="background-image: url(https://static.vecteezy.com/system/resources/thumbnails/004/709/149/small/grey-white-abstract-background-geometry-shine-and-layer-element-for-presentation-design-suit-for-business-corporate-institution-party-festive-seminar-and-talks-vector.jpg)">
                 <div class="my-logo">
                     <a class="navbar-brand" href="index.php">
                         <img src="images/logo2.png" alt="" class="img-fluid">
@@ -23,15 +24,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <li class="nav-item ">
                     <a class="nav-link" href="./login.php">Đăng nhập </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./login.php">Nghệ sĩ </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./login.php">Bài Viết </a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Nội dung cần tìm" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Tìm</button>
+                    <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
                 </form>
                 </div>
             </div>
         </nav>
-    </header>
+</header>

@@ -6,13 +6,13 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-interval="2000">
                 <img src="images/slideshow/slide01.jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="2000">
                 <img src="images/slideshow/slide02.jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-interval="2000">
                 <img src="images/slideshow/slide03.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
@@ -27,8 +27,8 @@
             </div>
     </header>
     
-    <main class="container-fluid mt-3">
-        <h3 class="text-center text-uppercase mb-3 text-primary fw-bold">TOP bài hát yêu thích</h3>
+    <main class="container-fluid mt-3" style="margin-bottom: 5%;">
+        <h3 class="text-left text-uppercase mb-3 text-primary fw-bold fs-2 text-danger">TOP bài hát yêu thích</h3>
         <div class="row">
             <?php
                 // Ket noi db
@@ -45,11 +45,11 @@
                        
             ?>
                 <div class="col-sm-3">
-                    <div class="card mb-2" style="width: 100%;">
+                    <div class="card mb-2 bg-danger border-red" style="width: 100%;">
                         <img src="<?php echo $row['hinhanh'];?>" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title text-center">
-                            <a href="detail.php?id=<?= $row['ma_bviet']?>" class="text-decoration-none fw-bold">
+                            <a href="detail.php?id=<?= $row['ma_bviet']?>" class="text-decoration-none text-white fw-bold">
                                 <?php echo $row['ten_bhat'];?>
                             </a>
                         </h5>

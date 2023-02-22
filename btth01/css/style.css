@@ -4,7 +4,7 @@ body{
     font-family: 'Numans', sans-serif !important;
 }
 .bg-body-tertiary{
-    background-color:#fff !important;
+    background-color:rgb(24, 144, 224) !important;
 }
 
 .my-logo{
@@ -31,4 +31,8 @@ body{
 
 a:hover {
     color: orange;
+}
+
+.text-body-tertiary{
+    color:rgb(16, 208, 45);
 }
