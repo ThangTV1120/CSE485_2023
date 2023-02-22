@@ -13,8 +13,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow p-3 bg-white rounded">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow p-3 bg-white rounded" style="margin-top: 0.5%;">
+            <div class="container-fluid bg-white fixed-top">
                 <div class="h3">
                     <a class="navbar-brand" href="#">Administration</a>
                 </div>
