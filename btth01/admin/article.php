@@ -6,7 +6,14 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Tên tác giả </th>
+                                <th scope="col">Tiêu Đề </th>
+                                <th scope="col">Tên Bài Hát </th>
+                                <th scope="col">Mã Thể Loại </th>
+                                <th scope="col">Tóm Tắt </th>
+                                <th scope="col">Nội Dung</th>
+                                <th scope="col">Mã Tác Giả</th>
+                                <th scope="col">Ngày Viết </th>
+                                <th scope="col">Hình Ảnh </th>
                                 <th>Sửa</th>
                                 <th>Xóa</th>
                             </tr>
@@ -25,7 +32,6 @@
                             if (mysqli_num_rows($result) > 0) {  // tra ve so hang trong tap KQ
                                 while ($row = mysqli_fetch_assoc($result)) { //ket qua cua truy van kieu mang
                             ?>
-
                                     <th scope="row"><?=$row['ma_tloai'] ?></th>
                                     <td><?=$row['ten_tgia'] ?></td>
                                     <td>
