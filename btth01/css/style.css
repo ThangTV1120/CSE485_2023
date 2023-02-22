@@ -22,10 +22,11 @@ body{
 .card-img-top {
     width: 100%;
     height: 15vw;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .my-title{
     overflow-y: hidden;
 }
+
 
