@@ -69,8 +69,8 @@
                         $sql = "SELECT * FROM theloai";
                         $result = mysqli_query($conn, $sql);
                         // Xu li ket qua tra ve
-                        if (mysqli_num_rows($result) > 0) {
-                            while ($row = mysqli_fetch_assoc($result)) {
+                        if (mysqli_num_rows($result) > 0) {  // tra ve so hang trong tap KQ
+                            while ($row = mysqli_fetch_assoc($result)) { //ket qua cua truy van kieu mang
                         ?>
 
                                 <th scope="row"><?=$row['ma_tloai'] ?></th>
