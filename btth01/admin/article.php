@@ -1,4 +1,4 @@
-<?php include 'header_admin.php';?>
+<?php include 'header_admin.php'?>
 <main class="container mt-5 mb-5">
 <div class="row">
                 <div class="col-sm">
