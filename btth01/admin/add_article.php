@@ -41,8 +41,8 @@
                     </div>
 
                     <div class="input-group mt-3 mb-3">
-                        <span class="input-group-text" id="lblCatName">Hình Ảnh</span>
-                        <input type="text" class="form-control" name="txtCatName" >
+                        <label for="myfile" id="lblCatName">Hình ảnh: </label>
+                        <input type="file" id="myfile" name="txtCatName">
                     </div>
 
                     <div class="form-group  float-end ">

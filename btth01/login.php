@@ -11,7 +11,8 @@
                             <span><i class="fab fa-twitter-square"></i></span>
                         </div>
                     </div>
-                    <div class="card-body" method ="user">
+
+                    <div class="card-body" method ="POST">
                         <form>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="txtUser"><i class="fas fa-user"></i></span>
@@ -32,7 +33,7 @@
                         </form>
                     </div>
                     <div class="card-footer">
-                        <div class="d-flex justify-content-center ">
+                        <div class="d-flex justify-content-center ">    
                             Don't have an account?<a href="signup.php" class="text-warning text-decoration-none">Sign Up</a>
                         </div>
                         <div class="d-flex justify-content-center">
@@ -41,6 +42,7 @@
                     </div>
                 </div>
 
+                    
         </div>
     </main>
 <?php include 'footer.php';?>
