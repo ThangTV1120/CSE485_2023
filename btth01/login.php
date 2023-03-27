@@ -11,16 +11,16 @@
                             <span><i class="fab fa-twitter-square"></i></span>
                         </div>
                     </div>
-                    <div class="card-body" method ="user">
-                        <form>
+                    <div class="card-body">
+                        <form  action="loginuser.php" method="POST">
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="txtUser"><i class="fas fa-user"></i></span>
-                                <input type="text" class="form-control" placeholder="username">
+                                <span class="input-group-text" ><i class="fas fa-user"></i></span>
+                                <input type="text" id="txtUser" name="txtUser" class="form-control" placeholder="username">
                             </div>
 
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="txtPass"><i class="fas fa-key"></i></span>
-                                <input type="text" class="form-control" placeholder="password">
+                                <span class="input-group-text" ><i class="fas fa-key"></i></span>
+                                <input type="password" id="txtPass" name="txtPass" class="form-control" placeholder="password">
                             </div>
                             
                             <div class="row align-items-center remember">
