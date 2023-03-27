@@ -11,14 +11,8 @@
                             <span><i class="fab fa-twitter-square"></i></span>
                         </div>
                     </div>
-<<<<<<< HEAD
-
-                    <div class="card-body" method ="POST">
-                        <form>
-=======
                     <div class="card-body">
                         <form  action="loginuser.php" method="POST">
->>>>>>> b10fb39e773e073bd5079811acefe4d5addaa2f1
                             <div class="input-group mb-3">
                                 <span class="input-group-text" ><i class="fas fa-user"></i></span>
                                 <input type="text" id="txtUser" name="txtUser" class="form-control" placeholder="username">

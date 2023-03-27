@@ -8,10 +8,10 @@ if(isset($_POST['btt_update'])){
     $catId=$_POST['txtCatId'];
     $catName=$_POST['txtCatName'];
     
-    $sql = "UPDATE baiviet SET tieude='$catName' WHERE ma_mabviet=$catId ";
+    $sql = "UPDATE baiviet SET tieude='$catName' WHERE ma_bviet=$catId ";
     $result = mysqli_query($conn, $sql);// thuc thi truy van
     if($result){
-        header("Location:author.php");
+        header("Location:article.php");
     }
 }
 if(isset($_POST['btt_add'])){
@@ -23,7 +23,7 @@ if(isset($_POST['btt_add'])){
     //echo $rr;
      $sql = "INSERT INTO baivet(tieude, tieude)VALUES($rr,'$catName')";
      if(mysqli_query($conn,$sql)){
-        header("Location:author.php");
+        header("Location:article.php");
      }
      else echo("Loi");
 }
